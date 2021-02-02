@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="BuildPatchTool">
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/BuildPatchTool.Target.cs" />
+  <VirtualDirectory Name="Config">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Programs/BuildPatchTool/Config/DefaultEngine.ini" />
+  </VirtualDirectory>
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/BuildPatchTool.Automation.cs" />
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/BuildPatchTool.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/BuildPatchTool.cpp" />
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolMode.cpp" />
+    <VirtualDirectory Name="ToolModes">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/AutomationMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/ChunkDeltaOptimiseMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/CompactifyMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/DiffManifestMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/EnumerationMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/MergeManifestMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/PackageChunksMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/PatchGenerationMode.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/VerifyChunksMode.cpp" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Public">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/BuildPatchTool.h" />
+    <VirtualDirectory Name="Interfaces">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/Interfaces/ToolMode.h" />
+    </VirtualDirectory>
+    <VirtualDirectory Name="ToolModes">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/AutomationMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/ChunkDeltaOptimiseMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/CompactifyMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/DiffManifestMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/EnumerationMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/MergeManifestMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/PackageChunksMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/PatchGenerationMode.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes/VerifyChunksMode.h" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-Debug" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe BuildPatchTool Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-DebugGame" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BuildPatchTool Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe BuildPatchTool Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe BuildPatchTool Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-Shipping" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe BuildPatchTool Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-Test" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./BuildPatchTool-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BuildPatchTool Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe BuildPatchTool Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

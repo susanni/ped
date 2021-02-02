@@ -1,0 +1,16 @@
+{
+	"files.exclude": {
+		"/home/swarm/Documents/Unreal Projects/ped/.kdev4": true,
+		"/home/swarm/Documents/Unreal Projects/ped/.vscode": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Content": true,
+		"/home/swarm/Documents/Unreal Projects/ped/DerivedDataCache": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Intermediate": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Saved": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Plugins/ROSIntegration/.git": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Plugins/ROSIntegration/Documentation": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Plugins/ROSIntegration/Intermediate": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Plugins/ROSIntegration/ThirdParty": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Plugins/ROSIntegrationVision/.git": true,
+		"/home/swarm/Documents/Unreal Projects/ped/Plugins/ROSIntegrationVision/Intermediate": true
+	}
+}

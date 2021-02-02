@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="UnrealFrontend">
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/UnrealFrontend.Target.cs" />
+  <VirtualDirectory Name="Config">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Programs/UnrealFrontend/Config/DefaultEngine.ini" />
+  </VirtualDirectory>
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/UnrealFrontend.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/UnrealFrontendMain.cpp" />
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/UnrealFrontendMain.h" />
+    <VirtualDirectory Name="Commands">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/DeployCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/DeployCommand.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/LaunchCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/LaunchCommand.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/LaunchFromProfileCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/LaunchFromProfileCommand.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/PackageCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/PackageCommand.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/StatsConvertCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/StatsConvertCommand.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/StatsDumpMemoryCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/StatsDumpMemoryCommand.h" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/UserInterfaceCommand.cpp" />
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands/UserInterfaceCommand.h" />
+    </VirtualDirectory>
+    <VirtualDirectory Name="Linux">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Linux/LinuxUnrealFrontendMain.cpp" />
+    </VirtualDirectory>
+    <VirtualDirectory Name="Mac">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Mac/MacUnrealFrontendMain.cpp" />
+    </VirtualDirectory>
+    <VirtualDirectory Name="Windows">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Windows/WindowsUnrealFrontendMain.cpp" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-Debug" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealFrontend Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-DebugGame" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealFrontend Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealFrontend Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealFrontend Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-Shipping" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealFrontend Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-Test" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFrontend-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealFrontend Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealFrontend Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

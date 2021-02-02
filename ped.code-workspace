@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "ped",
+			"path": "."
+		},
+		{
+			"name": "UE4",
+			"path": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-vscode.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug"
+		]
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "ped (Debug)",
+			"request": "launch",
+			"preLaunchTask": "ped Linux Debug Build",
+			"program": "/home/swarm/Documents/Unreal Projects/ped/Binaries/Linux/ped-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "ped (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "ped Linux DebugGame Build",
+			"program": "/home/swarm/Documents/Unreal Projects/ped/Binaries/Linux/ped-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "ped (Development)",
+			"request": "launch",
+			"preLaunchTask": "ped Linux Development Build",
+			"program": "/home/swarm/Documents/Unreal Projects/ped/Binaries/Linux/ped",
+			"args": [
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "ped (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "ped Linux Shipping Build",
+			"program": "/home/swarm/Documents/Unreal Projects/ped/Binaries/Linux/ped-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "ped (Test)",
+			"request": "launch",
+			"preLaunchTask": "ped Linux Test Build",
+			"program": "/home/swarm/Documents/Unreal Projects/ped/Binaries/Linux/ped-Linux-Test",
+			"args": [
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "pedEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "pedEditor Linux Debug Build",
+			"program": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject"
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "pedEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "pedEditor Linux DebugGame Build",
+			"program": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject"
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "pedEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "pedEditor Linux Development Build",
+			"program": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject"
+			],
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/swarm/Documents/Unreal Projects/ped/ped.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+		}
+	]
+}

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="UnrealWatchdog">
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/UnrealWatchdog.Target.cs" />
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/UnrealWatchdog.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/UnrealWatchdog.cpp" />
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/UnrealWatchdog.h" />
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/WatchdogAnalytics.cpp" />
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/WatchdogAnalytics.h" />
+    <VirtualDirectory Name="Linux">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/Linux/UnrealWatchdogMainLinux.cpp" />
+    </VirtualDirectory>
+    <VirtualDirectory Name="Mac">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/Mac/UnrealWatchdogMainMac.cpp" />
+    </VirtualDirectory>
+    <VirtualDirectory Name="Windows">
+      <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealWatchdog/Private/Windows/UnrealWatchdogMainWindows.cpp" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-Debug" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealWatchdog Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-DebugGame" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealWatchdog Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealWatchdog Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-Shipping" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealWatchdog Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-Test" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealWatchdog-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealWatchdog Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealWatchdog Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

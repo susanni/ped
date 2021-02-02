@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ped Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Mac",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"IOS",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"HTML5",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"Linux",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Shipping",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ped TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "ped TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ped",
+				"TVOS",
+				"Test",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"pedEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"pedEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"pedEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Linux",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"pedEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"Debug",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"pedEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"DebugGame",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"pedEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		},
+		{
+			"label": "pedEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"pedEditor",
+				"Mac",
+				"Development",
+				"/home/swarm/Documents/Unreal Projects/ped/ped.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine"
+			}
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{00040ADB-08D8-B67F-8D8A-5AF8E67502D4}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ped",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ROSIntegration",
+			"Enabled": true
+		}
+	]
+}

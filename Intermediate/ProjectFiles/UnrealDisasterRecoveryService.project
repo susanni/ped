@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="UnrealDisasterRecoveryService">
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealDisasterRecoveryService/UnrealDisasterRecoveryService.Target.cs" />
+  <VirtualDirectory Name="Config">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Programs/UnrealDisasterRecoveryService/Config/DefaultEngine.ini" />
+  </VirtualDirectory>
+  <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealDisasterRecoveryService/UnrealDisasterRecoveryService.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Source/Programs/UnrealDisasterRecoveryService/Private/UnrealDisasterRecoveryService.cpp" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-Debug" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Debug -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-DebugGame" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux DebugGame -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Development -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-Shipping" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Shipping -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-Test" />
+      <General WorkingDirectory="/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealDisasterRecoveryService-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/media/swarm/b0a89838-e187-400f-a659-fbc018880184/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject" -clean
+mono UnrealBuildTool.exe UnrealDisasterRecoveryService Linux Test -project="/home/swarm/Documents/Unreal Projects/ped/ped.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>
